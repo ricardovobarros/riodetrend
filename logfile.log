@@ -1,0 +1,21 @@
+2021-02-28 11:30:46,920:INFO:Raster: dem_1 with projection "ETRS89 UTM Nord fuseau 32" was read successfully
+2021-02-28 11:30:47,341:INFO:Shape: thal_points_1 was read successfully
+2021-02-28 11:30:47,502:INFO:Failed to auto identify EPSG: 7
+2021-02-28 11:30:47,569:INFO:Dem dem_1 trend = -0.19026219098811928%
+2021-02-28 11:30:47,598:INFO:Detredend dem dem_1 trend = -0.01727417035753831%
+2021-02-28 11:30:47,598:WARNING:Detrended dem dem_1 may not be sufficiently flat
+2021-02-28 11:30:59,088:INFO:Raster: dem_2 with projection "ETRS89 UTM Nord fuseau 32" was read successfully
+2021-02-28 11:30:59,913:INFO:Shape: thal_points_2 was read successfully
+2021-02-28 11:31:00,049:INFO:Failed to auto identify EPSG: 7
+2021-02-28 11:31:00,152:INFO:Dem dem_2 trend = -0.0017059360058770245%
+2021-02-28 11:31:00,205:INFO:Detredend dem dem_2 trend = -0.00015867633237624663%
+2021-02-28 11:31:24,380:INFO:Raster: dem_3 with projection "ETRS89 UTM Nord fuseau 32" was read successfully
+2021-02-28 11:31:25,115:INFO:Shape: thal_points_3 was read successfully
+2021-02-28 11:31:25,251:INFO:Failed to auto identify EPSG: 7
+2021-02-28 11:31:25,361:INFO:Dem dem_3 trend = -0.04285647911087511%
+2021-02-28 11:31:25,404:INFO:Detredend dem dem_3 trend = -0.0031058939141913764%
+2021-02-28 11:31:47,287:INFO:Raster: dem_4 with projection "ETRS89 UTM Nord fuseau 32" was read successfully
+2021-02-28 11:31:48,489:INFO:Shape: thal_points_4 was read successfully
+2021-02-28 11:31:48,622:INFO:Failed to auto identify EPSG: 7
+2021-02-28 11:31:48,733:INFO:Dem dem_4 trend = -0.14318010347355267%
+2021-02-28 11:31:48,788:INFO:Detredend dem dem_4 trend = -0.009362412652842385%
