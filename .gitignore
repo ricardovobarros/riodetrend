@@ -3,4 +3,4 @@
 
 # Ada Library Information
 *.ali
-*.deia/
+.idea/

@@ -3,9 +3,9 @@
 
 ## 1. About Riodetrend
 
-###  Purpose
+### 1.1 Purpose
 Detrend a piecewise Digital Elevation Model (DEM) of a river.
-### Motivation 
+### 1.2 Motivation 
 Detrended DEM is a valuable information for a variety of analyses in River Engineering
 such as flood simulations, sediments transports and river modelling. 
 
@@ -16,7 +16,7 @@ limited to DEMs with approximately linear Thalwegs, since a DEM can be clipped i
 overall shape.   
     
 
-### Data Flow Diagram
+### 1.3 Data Flow Diagram
 In general terms, the algorithm first reads a raster (DEM) and a point shapefile (Thalweg) as a arrays. It fits a plane
 using the cardinal direction and elevation of Thalweg points. As a second step, DEM array and the plane are subtracted resulting in a 
 detrended DEM array. Finally, the detrended array is converted back into a raster (see workflow below).  
@@ -25,12 +25,11 @@ detrended DEM array. Finally, the detrended array is converted back into a raste
 
 
 ## 2. Run Riodetrend
-___
 
-### - Clone the repository
-    $ git clone https://github.tik.uni-stuttgart.de/st166353/detrender.git
+### 2.1 Clone the repository
+    $ git clone https://github.com/ricardovobarros/riodetrend.git
 
-### - Requiried packages Packages 
+### 2.2 Requiried packages Packages 
 - `matplotlib.pyplot`
 - `numpy`   
 - `pandas`
@@ -42,13 +41,22 @@ ___
 - `time`
 - `logging`
 
-### - Input Instructions 
-To run Detrender Toll, the User has to provide on terminal the local address of two folders
-which contains respectively Raster file(s) and Shape file(s), in that oder 
-.Alternatively the user can run the example within the code, just running `detrender.py`.
-The number of files has to be the same for both folders so that each raster file corresponds to a shape fil 
+### 2.3 Run Example "geodata_example"
+Before applying Riodetrend to your DEMs, you can run the provided example ``geodata_example`` to get a feeling how the tool works.
 
-To ensure the correspond order, it is recommended that the file's names end with number, example: "raster_1" and "thalweg_points_2".
+To run the example, just run `detrender.py`.  The output (i.e., detrended rasters) will be saved inside the folder ``detrended_rasters``.
+Additionally, graphs that demonstrate the process will be saved inside `geodata_example/plots`. 
+
+During the running, warnings and the step-by-step computation are shown on the prompt.
+
+### 2.4  Run on your DEMs <-----
+Riodetrend require only two inputs to run:
++ local file address containing as many DEMs (.tiff files) you want, AND
++ local file address containing the corresponding Thalweg(s) (.shp files) to the DEMs. 
+
+In addition, the DEMS and shapefles, must be enumerated accordantly, as shown in the example folders ``geodata_example/rasters`` 
+and ``geodata_example/shapefiles`` (e.g., raster_1 correponds to thalweg_1)
+
 
 
 #### 1.Input Raster
@@ -117,10 +125,7 @@ folder containing the raster files.\
 The path to the folders should not have space on it.
 
   
-#### - Run Example "geodata_example"
-To run the example contained inside the folder "geodata_example", one can just run `detrender.py`. The setup 
-for running the example is defined in `config.py`. The output will be safed inside the folders "detrended_rasters"
-and "plots". 
+
 
 
 
